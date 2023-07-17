@@ -10,3 +10,8 @@ mobileMenu.addEventListener('click', function(){
         mainMenu.classList.remove("active-menu")
     }
 });
+
+$(document).ready(function () {
+    $(".select2").select2();
+  });
+  

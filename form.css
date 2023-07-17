@@ -175,6 +175,10 @@ input[type="date"] {
     .box-select-wrapper {
         grid-template-columns: 1fr;
     }
+
+    .select2-container {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 767px) {
