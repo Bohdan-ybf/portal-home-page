@@ -122,3 +122,47 @@ input[type="date"] {
     bottom: 0;
     opacity: 0;
 }
+
+@media (max-width: 1200px) {
+    .form-it-department__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .item-5 {
+        grid-row-start: 2;
+    }
+
+    .item-4 {
+        grid-row-start: 4;
+    }
+
+    .department-box__rows {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    .box-button-weapper {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .width-custom>input,
+    .width-custom>select {
+        width: 100%;
+    }
+
+    .form__title__box {
+        flex-direction: column;
+    }
+
+    .box-name-right {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 24px !important;
+    }
+}
