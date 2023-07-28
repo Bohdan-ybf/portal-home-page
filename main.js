@@ -11,7 +11,13 @@ mobileMenu.addEventListener('click', function(){
     }
 });
 
+$(".nav-mobile-menu").click(function () {
+    $('body').toggleClass("overflow-hidden");
+});
+
 $(document).ready(function () {
     $(".select2").select2();
   });
+
+
   
