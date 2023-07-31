@@ -1,0 +1,86 @@
+/* ---time--------*/
+
+.time-container {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.time-data {
+    width: 125px;
+    /* background-color: pink; */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-row {
+    display: flex;
+}
+
+.time-cell {
+    width: 70px;
+    height: 20px;
+    /* border: 1px solid gray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell-color-yellow {
+    background-color: yellow;
+}
+
+/* --------------- */
+.timetable-day-container {
+    display: flex;
+}
+
+.timetable-day {
+    width: 125px;
+    background-color: pink;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timetable-row {
+    display: flex;
+}
+
+.timetable-cell {
+    width: 70px;
+    height: 20px;
+    /* border: 1px solid #F6F6F6; */
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.timetable-cell::after,
+.timetable-cell::before {
+    content: "";
+    width: 100%;
+    transform: scale(-1, 1);
+    height: 100%;
+    clip-path: polygon(1% 0, 50% 101%, 67% 100%, 20% 1%);
+    background-color: rgb(255, 255, 255, 50%);
+    position: absolute;
+}
+
+.timetable-cell::after {
+    left: 0;
+}
+
+.timetable-cell::before {
+    left: -20px;
+}
+
+.cell-color-yellow {
+    background-color: #FFDCDC;
+}

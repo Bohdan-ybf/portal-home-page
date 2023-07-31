@@ -302,6 +302,14 @@ body {
 	margin-bottom: 30px;
 }
 
+.secondary__title {
+	color: #181716;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 20px 0;
+}
+
 .main__content__wrapper {
 	display: grid;
 	grid-gap: 20px;
