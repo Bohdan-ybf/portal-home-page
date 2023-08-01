@@ -1,0 +1,222 @@
+.section__main__content {}
+
+.main__content__wrapper {}
+
+.nav-bar__wrapper {
+    max-width: 240px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.staff__img {
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.staff__img__wrapper {}
+
+.staff__name {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+/* ------------------ */
+
+
+/*--------- акордіон в моб версії--------------*/
+
+.tech__char__accor__block {
+    position: relative;
+    margin-bottom: 1px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.tech__char__accor__block input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.char__accor__content__wrapper {
+    max-height: 100vh;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+.char__accor__content__row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2px;
+    color: red;
+}
+
+.char__accor__content__row:hover .accor__block-name {
+    color: #000;
+}
+
+.char__accor__content__row:hover {
+    background-color: #D1FFD6;
+}
+
+.char__accor__content__row.active {
+    background-color: #D1FFD6;
+}
+
+.char__accor__content__row-exit {
+    border-top: 1px solid #F6F6F6;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+
+.char__accor__content__row-exit:hover {
+    background-color: transparent;
+}
+
+.accor-img {
+    margin-right: 10px;
+}
+
+.char__accor__content__row-exit:hover>.accor__block-name {
+    color: #000;
+}
+
+.accor__content__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+}
+
+.accor__content__value {
+    font-family: 'ProximaNova', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* :checked */
+.tech__char__accor__block input:checked~.char__accor__content__wrapper {
+    max-height: 100vh;
+}
+
+.tech__char__accor__block label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+.tech__char__accor__block label.active {
+    background-color: #D1FFD6;
+}
+
+.tech__char__accor__block label.active .accor__block-name {
+    color: #000;
+}
+
+.tech__char__accor__block label:hover>.accor__block-name {
+    color: #000;
+}
+
+.tech__char__accor__block label:hover {
+    background-color: #D1FFD6;
+
+}
+
+.accor__block-name {
+    color: #9C9C9C;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.accor__block-name:hover {
+    color: #000000;
+}
+
+.tech__char__accor__block label>span {
+    margin-left: 10px;
+    font-family: 'ProximaNova', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+.tech__char__accor__block label::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+    display: none;
+}
+
+.tech__char__accor__block input[type=checkbox]+label::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(http://jeep.vidi.of/bundles/dcsite/img/jeep/icon/arrow-button-accord.svg);
+}
+
+.tech__char__accor__block input[type=checkbox]:checked+label::after {
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(http://jeep.vidi.of/bundles/dcsite/img/jeep/icon/close-button-accord.svg);
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 768px) {
+    .char__accor__content__wrapper {
+        max-height: 0;
+    }
+
+    .tech__char__accor__block input:checked~.char__accor__content__wrapper {
+        max-height: 100vh;
+    }
+
+    .tech__char__accor__block label::after {
+        display: block;
+    }
+
+    .tech__char__accor__block label>span {
+        font-size: 16px;
+    }
+
+    .section__technical__characteristics__accordion {
+        margin-bottom: 30px;
+    }
+}
+
+/*----END----- акордіон в моб версії--------------*/
