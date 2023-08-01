@@ -99,3 +99,160 @@
 
 
 /* -------timeTable--------*/
+
+
+
+
+/*--------- акордіон в моб версії--------------*/
+
+.section__technical__characteristics__accordion {
+    margin-bottom: 100px;
+}
+
+.technical__characteristics__accordion__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.tech__char__accor__block {
+    position: relative;
+    margin-bottom: 1px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.tech__char__accor__block input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.char__accor__content__wrapper {
+    max-height: 100vh;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+.char__accor__content__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.char__accor__content__row:nth-child(odd) {
+    background: #F3F3F3;
+}
+
+.accor__content__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+}
+
+.accor__content__value {
+    font-family: 'ProximaNova', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* :checked */
+.tech__char__accor__block input:checked ~ .char__accor__content__wrapper {
+    max-height: 100vh;
+}
+
+.tech__char__accor__block label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #3E3E3E;
+    cursor: default;
+
+}
+
+.tech__char__accor__block label > span {
+    margin-left: 10px;
+    font-family: 'ProximaNova', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+.tech__char__accor__block label::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+    display: none;
+}
+
+.tech__char__accor__block input[type=checkbox] + label::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(http://jeep.vidi.of/bundles/dcsite/img/jeep/icon/arrow-button-accord.svg);
+}
+
+.tech__char__accor__block input[type=checkbox]:checked + label::after {
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(http://jeep.vidi.of/bundles/dcsite/img/jeep/icon/close-button-accord.svg);
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {
+
+    .technical__characteristics__accordion__wrapper {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .char__accor__content__wrapper {
+        max-height: 0;
+    }
+
+    .tech__char__accor__block input:checked ~ .char__accor__content__wrapper {
+        max-height: 100vh;
+    }
+
+    .tech__char__accor__block label::after {
+        display: block;
+    }
+
+    .technical__characteristics__accordion__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .tech__char__accor__block label > span {
+        font-size: 16px;
+    }
+
+    .section__technical__characteristics__accordion {
+        margin-bottom: 30px;
+    }
+}
+
+/*----END----- акордіон в моб версії--------------*/
