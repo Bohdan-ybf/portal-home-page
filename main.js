@@ -18,6 +18,3 @@ $(".nav-mobile-menu").click(function () {
 $(document).ready(function () {
     $(".select2").select2();
   });
-
-
-  
