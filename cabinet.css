@@ -94,6 +94,10 @@
     color: #000;
 }
 
+.char__accor__content__row.active .accor__block-name {
+    color: #000;
+}
+
 .accor__content__name {
     font-style: normal;
     font-weight: 400;
@@ -102,7 +106,6 @@
 }
 
 .accor__content__value {
-    font-family: 'ProximaNova', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -155,7 +158,6 @@
 
 .tech__char__accor__block label>span {
     margin-left: 10px;
-    font-family: 'ProximaNova', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 23px;
@@ -220,3 +222,69 @@
 }
 
 /*----END----- акордіон в моб версії--------------*/
+
+
+/* центральний контент */
+.main__content_container {
+    display: flex;
+
+}
+
+.main__unit__wrapper {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.title {}
+
+.main__unit__container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.main__unit__center {}
+
+.main__unit__right {
+    width: 100%;
+}
+
+.main__unit__box {
+    background-color: #ffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main__unit-title {
+    color: #181716;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.main__unit__box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 30px;
+}
+
+.main__unit__title-text {
+    color: #9C9C9C;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.main__unit-text {
+    color: #333;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    /* margin-bottom: 20px; */
+}
+
+/* END центральний контент */
