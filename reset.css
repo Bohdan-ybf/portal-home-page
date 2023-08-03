@@ -152,3 +152,22 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.accordion-button:focus {
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+	color: inherit;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.accordion-button {
+	padding: 1rem 0;
+}
+
+.accordion-body {
+	padding: 1rem 0;
+}

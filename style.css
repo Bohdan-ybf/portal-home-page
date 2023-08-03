@@ -590,10 +590,29 @@ body {
 	row-gap: 30px;
 }
 
-.create__application-btn{ 
-    margin: 10px 0 30px 0;
-    background-color: #fff;
-    width: 320px;
+.create__application-btn {
+	margin: 10px 0 30px 0;
+	background-color: #fff;
+	width: 320px;
+}
+
+.arhive-btn {
+	color: #9C9C9C;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	border: 1px solid #9C9C9C;
+	padding: 6px 20px;
+	margin-left: auto;
+	display: table;
+	margin-top: 25px;
+}
+
+.contacts-custom {
+	color: #333;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
 }
 
 @media (max-width: 1200px) {

@@ -429,6 +429,49 @@
 
 }
 
+.mail__wrapper {}
+
+.mail__title__wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(7, 1fr); */
+    grid-template-columns: 9% 20% 20% 11% 11% 7% 16%;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.mail__title {
+    color: #9C9C9C;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.mail__box {
+    display: grid;
+    grid-template-columns: 9% 20% 20% 11% 11% 7% 16%;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: #FFF2CC;
+    padding: 10px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.mail__box__text {
+    color: #333;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.main__box__icon__mail {
+    text-align: center;
+}
+
 /* ----Мої звернення ----- */
 .main__unit__box {}
 
@@ -436,6 +479,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .mail__header-title {
@@ -499,6 +543,41 @@
 
 .mail__counter.yellow {
     background-color: #FFF2CC;
+}
+
+.contact__accordion__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 15px;
+}
+
+.mail__title {}
+
+.contact__accordion__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #C5C6C6;
+    padding-bottom: 10px;
+}
+
+.accordion__user__name {
+    color: #E40C25;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.accordion__text {
+    color: #333;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* --END--Мої звернення ----- */
