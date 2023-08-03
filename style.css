@@ -316,6 +316,16 @@ body {
 	grid-template-columns: 74% 25%;
 }
 
+.main__unit-top-title {
+	color: #181716;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 10px 0 30px 0;
+
+}
+
 /* .block {} */
 
 .block__wrapper {
@@ -563,6 +573,16 @@ body {
 	margin-top: -65px;
 }
 
+.staff__name__mob {
+	color: #333;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	display: none;
+}
+
 @media (max-width: 1200px) {
 	.block__wrapper {
 		grid-template-columns: 1fr;
@@ -646,6 +666,20 @@ body {
 
 }
 
+
+@media (max-width: 768px) {
+	.top-title-user {
+		margin: 30px 0;
+	}
+
+	.title__mob-none {
+		display: none;
+	}
+
+	.staff__name__mob {
+		display: block;
+	}
+}
 
 @media (max-width: 340px) {
 	.header__logo {
