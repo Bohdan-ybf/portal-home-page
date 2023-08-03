@@ -119,7 +119,6 @@
     background-color: #ffffff;
     cursor: pointer;
     border-radius: 2px;
-
 }
 
 .tech__char__accor__block label.active {
@@ -387,16 +386,6 @@
     display: none;
 }
 
-.tech__char__accor__block {}
-
-.doc {}
-
-.accor__block-name {}
-
-.documentation {}
-
-.char__accor__content__wrapper {}
-
 .tech__char__accor__doc__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -429,15 +418,12 @@
 
 }
 
-.mail__wrapper {}
-
 .mail__title__wrapper {
     display: grid;
     /* grid-template-columns: repeat(7, 1fr); */
     grid-template-columns: 9% 20% 20% 11% 11% 7% 16%;
     column-gap: 10px;
     row-gap: 10px;
-
 }
 
 .mail__title {
@@ -473,7 +459,7 @@
 }
 
 /* ----Мої звернення ----- */
-.main__unit__box {}
+
 
 .my__appeals__mail__header {
     display: flex;
@@ -506,6 +492,7 @@
     font-style: normal;
     font-weight: 400;
     margin-right: 10px;
+    white-space: nowrap;
 }
 
 .mail__counter {
@@ -553,8 +540,6 @@
     margin-bottom: 15px;
 }
 
-.mail__title {}
-
 .contact__accordion__box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -580,6 +565,24 @@
     font-weight: 400;
 }
 
+.mail__box-lear-more-btn {
+    padding: 5px;
+    border-radius: 100px;
+    background-color: #E40C25;
+    color: #fff;
+    display: none;
+    text-align: center;
+}
+
+.mail__box-lear-more-btn:hover {
+    opacity: 70%;
+    color: #fff;
+}
+
+.timetable__box {
+    padding: 0;
+}
+
 /* --END--Мої звернення ----- */
 
 @media (max-width: 991px) {
@@ -590,6 +593,35 @@
     .work__title {
         display: block;
         margin-top: 15px;
+    }
+
+    .tech__char__accor__doc__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-none {
+        display: none;
+    }
+
+    .mail__box-lear-more-btn {
+        display: block;
+    }
+
+    .mail__header__counter__wrapper {
+        flex-wrap: wrap;
+    }
+
+
+    .mail__header__counter__box {
+        margin-top: 5px;
+    }
+
+    .mail__title__wrapper {
+        grid-template-columns: 0.8fr 0.5fr 1fr;
+    }
+
+    .mail__box {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
     }
 }
 
@@ -620,6 +652,17 @@
     .main__unit__box__work__wrapper {
         flex-wrap: wrap;
     }
+
+    .main__unit__top__title__wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .accor__block-name.documentation {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
 }
 
 /* END центральний контент */

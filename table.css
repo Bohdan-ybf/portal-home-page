@@ -36,6 +36,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.timetable-day-data {
+    margin-left: 3px;
 }
 
 .timetable-row {
@@ -74,6 +79,7 @@
 
 .timetable-cell-name {
     white-space: nowrap;
+    text-decoration: underline;
     z-index: 100;
 }
 
@@ -97,17 +103,13 @@
 
 /* END Colors */
 
-
 /* -------timeTable--------*/
-
-
-
 
 /*--------- акордіон в моб версії--------------*/
 
-.section__technical__characteristics__accordion {
+/* .section__technical__characteristics__accordion {
     margin-bottom: 100px;
-}
+} */
 
 .technical__characteristics__accordion__wrapper {
     display: grid;
@@ -139,14 +141,14 @@
 
 .char__accor__content__row {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 15px;
 }
 
-.char__accor__content__row:nth-child(odd) {
+/* .char__accor__content__row:nth-child(odd) {
     background: #F3F3F3;
-}
+} */
 
 .accor__content__name {
     font-style: normal;
@@ -164,7 +166,7 @@
 }
 
 /* :checked */
-.tech__char__accor__block input:checked ~ .char__accor__content__wrapper {
+.tech__char__accor__block input:checked~.char__accor__content__wrapper {
     max-height: 100vh;
 }
 
@@ -178,7 +180,7 @@
 
 }
 
-.tech__char__accor__block label > span {
+.tech__char__accor__block label>span {
     margin-left: 10px;
     font-family: 'ProximaNova', serif;
     font-style: normal;
@@ -198,7 +200,7 @@
     display: none;
 }
 
-.tech__char__accor__block input[type=checkbox] + label::after {
+.tech__char__accor__block input[type=checkbox]+label::after {
     content: "";
     width: 15px;
     height: 15px;
@@ -208,7 +210,7 @@
     background-image: url(http://jeep.vidi.of/bundles/dcsite/img/jeep/icon/arrow-button-accord.svg);
 }
 
-.tech__char__accor__block input[type=checkbox]:checked + label::after {
+.tech__char__accor__block input[type=checkbox]:checked+label::after {
     width: 15px;
     height: 15px;
     background-position: center;
@@ -220,21 +222,58 @@
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 991px) {
+.timetable-title {
+    padding: 20px 20px 0 20px;
+}
 
+.mob-version {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .timetable-cell {
+        width: 5vw;
+    }
+
+    .time-cell {
+        width: 5vw;
+    }
+
+    .timetable-day {
+        font-size: 12px;
+        width: 85px;
+    }
+
+    .time-data {
+        width: 85px
+    }
+
+    .time-cell {
+        display: none;
+    }
+
+    .mob-version {
+        display: block;
+        font-size: 12px;
+        height: 0;
+    }
+}
+
+
+@media (max-width: 991px) {
     .technical__characteristics__accordion__wrapper {
         grid-template-columns: 1fr 1fr;
         row-gap: 10px;
     }
-
 }
+
 
 @media (max-width: 768px) {
     .char__accor__content__wrapper {
         max-height: 0;
     }
 
-    .tech__char__accor__block input:checked ~ .char__accor__content__wrapper {
+    .tech__char__accor__block input:checked~.char__accor__content__wrapper {
         max-height: 100vh;
     }
 
@@ -246,12 +285,31 @@
         grid-template-columns: 1fr;
     }
 
-    .tech__char__accor__block label > span {
+    .tech__char__accor__block label>span {
         font-size: 16px;
     }
 
     .section__technical__characteristics__accordion {
         margin-bottom: 30px;
+    }
+
+    .timetable-day-data {
+        display: none;
+    }
+
+    .timetable-cell::before {
+        left: -32px;
+    }
+}
+
+@media (max-width: 568px) {
+
+    .timetable-cell {
+        width: 6vw;
+    }
+
+    .time-cell {
+        width: 6vw;
     }
 }
 
