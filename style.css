@@ -583,6 +583,13 @@ body {
 	display: none;
 }
 
+.my-appeals__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 30px;
+}
+
 @media (max-width: 1200px) {
 	.block__wrapper {
 		grid-template-columns: 1fr;
@@ -609,6 +616,11 @@ body {
 
 	.block_6 {
 		margin-top: -1420px;
+	}
+
+
+	.my-appeals__wrapper {
+		grid-template-columns: 1fr 1fr;
 	}
 
 
@@ -662,6 +674,10 @@ body {
 	.box__news__info-text {
 		height: auto;
 		overflow: hidden;
+	}
+
+	.my-appeals__wrapper {
+		grid-template-columns: 1fr;
 	}
 
 }
